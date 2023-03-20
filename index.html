@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Crude System for proudact</title>
+    <link rel="icon" href="./img/3522288.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sty.css">
+</head>
+
+<body>
+    <div class="container border rounded shadow mt-5 bg-success-subtle">
+        <div class="row ">
+            <div class="col-md-12">
+                <h1 class="fw-bolder mt-2 text-center ">Crued System</h1>
+                <label for="" class="mt-3">Proudact Name</label>
+                <input type="text " id="proudactName" onblur="pnameValidat()" class=" my-2 form-control">
+                <div class="alert alert-danger text-center  d-none" id="alertpn" role="alert">
+                    <strong>enter </strong>
+                </div>
+                <label for="">Proudact Category</label>
+                <input type="text" id="proudactCategory" onblur="pCategoryValidation()" class="my-2 form-control">
+                
+                <label for="" class="my-2">Proudact Price</label>
+                <input type="text" id="proudactPrice" class="my-2 form-control">
+                
+                <label for="" class="my-2">Proudact Description</label>
+                <textarea name="" id="proudactDescription" cols="5" rows="2" class=" my-2 form-control"></textarea>
+              
+                <div class="alert alert-danger text-center  d-none" id="alertVa" role="alert">
+                    <strong>ENTER A VALIED DATA </strong>
+                </div>
+
+                <button class="btn btn-primary mx-3 my-2" id="btn-add">Add Proudact</button>
+                <button class="btn btn-danger" onclick="Reast()">Resate</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <input type="text" onkeyup="Search()" id="searchP" class="form-control w-75 m-auto mt-5" placeholder="Search With Name">
+
+
+    <table class="table w-75 m-auto my-5">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tablebody" class="text-white">
+
+
+
+        </tbody>
+    </table>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.container{
+    /* height: 75vh; */
+    padding-bottom: 1.25rem;
+    margin: auto;
+    
+}
+body{
+    background: #09666b;
+}
+mark{
+    background-color: rgb(69, 69, 255);
+    color: white;
+}
